@@ -19,6 +19,7 @@ public class Solution {
         /* Если хотя бы два числа равны. */
         if (one == two || one == three || two == three) {
             for (int i = 0; i < mas.length; i++) {
+                int countOdd = 0; // Создаём счетчик странных элементов. За каждое неравенство счётчик будет увеличиваться на 1.
                 for (int j = 0; j < mas.length; j++) {
 
                     if (mas[i] != mas[j] && i != j) {
